@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="SwipeCards" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="HnZ-WC-Pk7"/>
+                <outlet property="idLabel" destination="Hxd-Em-PhD" id="avb-V8-8Ng"/>
+                <outlet property="indexLabel" destination="NTs-Hf-eg2" id="Sor-9m-nYd"/>
+                <outlet property="nextButton" destination="OUm-5h-Tt1" id="78g-hn-SWD"/>
+                <outlet property="previousButton" destination="7R1-cC-w5f" id="VYY-Wd-7S9"/>
+                <outlet property="restoreButton" destination="wFP-Fk-z1L" id="c2h-NJ-bHf"/>
+                <outlet property="titleLabel" destination="1NU-Yh-1mA" id="SgZ-ec-awT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="787"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Djs-6r-qwm">
+                    <rect key="frame" x="30" y="194" width="335" height="443"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxd-Em-PhD">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="142.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NU-Yh-1mA">
+                            <rect key="frame" x="0.0" y="150.5" width="335" height="142"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTs-Hf-eg2">
+                            <rect key="frame" x="0.0" y="300.5" width="335" height="142.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ybB-Nj-dRq">
+                    <rect key="frame" x="30" y="690" width="335" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R1-cC-w5f">
+                            <rect key="frame" x="0.0" y="0.0" width="111.5" height="50"/>
+                            <state key="normal" title="Restart"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFP-Fk-z1L">
+                            <rect key="frame" x="111.5" y="0.0" width="112" height="50"/>
+                            <state key="normal" title="Undo"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUm-5h-Tt1">
+                            <rect key="frame" x="223.5" y="0.0" width="111.5" height="50"/>
+                            <state key="normal" title="Next"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="FXR-0Q-RtA"/>
+                        <constraint firstAttribute="bottom" secondItem="wFP-Fk-z1L" secondAttribute="bottom" id="Xt6-hv-TN9"/>
+                        <constraint firstAttribute="bottom" secondItem="OUm-5h-Tt1" secondAttribute="bottom" id="gKn-Dd-1cM"/>
+                        <constraint firstAttribute="bottom" secondItem="7R1-cC-w5f" secondAttribute="bottom" id="gUj-gk-STN"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ybB-Nj-dRq" firstAttribute="top" secondItem="Djs-6r-qwm" secondAttribute="bottom" constant="53" id="F4a-tB-cwP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Djs-6r-qwm" secondAttribute="bottom" constant="150" id="IHu-gz-QYP"/>
+                <constraint firstItem="ybB-Nj-dRq" firstAttribute="leading" secondItem="Djs-6r-qwm" secondAttribute="leading" id="JB0-Sk-nPf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Djs-6r-qwm" secondAttribute="trailing" constant="30" id="SYB-ve-Ql8"/>
+                <constraint firstItem="Djs-6r-qwm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Udo-iM-84K"/>
+                <constraint firstItem="ybB-Nj-dRq" firstAttribute="trailing" secondItem="Djs-6r-qwm" secondAttribute="trailing" id="XmO-sG-LQi"/>
+                <constraint firstItem="Djs-6r-qwm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="150" id="s1T-qd-d2C"/>
+                <constraint firstItem="Djs-6r-qwm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="tQj-Ws-GIt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="418.11594202898556" y="-381.36160714285711"/>
+        </view>
+    </objects>
+</document>

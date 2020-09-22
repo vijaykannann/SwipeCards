@@ -1,0 +1,20 @@
+PODS:
+  - ObjectMapper (3.5.3)
+  - Shuffle-iOS (0.4.0)
+
+DEPENDENCIES:
+  - ObjectMapper (~> 3.2)
+  - Shuffle-iOS
+
+SPEC REPOS:
+  trunk:
+    - ObjectMapper
+    - Shuffle-iOS
+
+SPEC CHECKSUMS:
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  Shuffle-iOS: 87e4d3503475f3d684a375358649911e36fe139f
+
+PODFILE CHECKSUM: 8a5c6d2a16c52f03209b92a64e681ea1a0e851b1
+
+COCOAPODS: 1.10.0.beta.2
